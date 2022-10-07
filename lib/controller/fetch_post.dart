@@ -3,7 +3,7 @@ import 'dart:convert';
 import 'package:ex2/model/post.dart';
 import 'package:http/http.dart' as http;
 
-Future<Post> fetchPost() async {
+Future<Post> fetchPost([client]) async {
   final response =
       await http.get(Uri.parse('https://jsonplaceholder.typicode.com/posts/1'));
 
