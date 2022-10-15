@@ -25,6 +25,6 @@ jobs:
     - run: flutter pub get
     
     # Run all unit and mock tests
-    - run: flutter pub run builder_runner build
+    - run: flutter pub run build_runner build
 
     - run: flutter test
